@@ -2,6 +2,7 @@ import os
 
 
 def rename_files(path_to_files, new_name, digit_count_suffix=0, target_file_ext='', new_ext='', range_name=None):
+    assert digit_count_suffix >= 0, 'digit_count_suffix должен быть >= 0'
     files = os.listdir(path_to_files)
     if digit_count_suffix == 0:
         file_count = len(files)
