@@ -1,4 +1,4 @@
-import csv
+code = """import csv
 import json
 import random
 import math
@@ -40,3 +40,9 @@ def find_roots(a, b, c):
         return (-b + math.sqrt(discriminant)) / (2*a)
     else:
         return None
+
+"""
+
+with open('__init__.py', 'w') as file:
+    file.write(code)
+
